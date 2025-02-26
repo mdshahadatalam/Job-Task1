@@ -40,7 +40,7 @@ export const Payment = () => {
             </label>
             <input
               className='rounded-md p-5 w-full h-[54px] bg-gray-200 outline-none'
-              type="text"
+              type="password"
               name="transaction-id"
               id="transaction-id"
             />
@@ -78,7 +78,7 @@ export const Payment = () => {
   </h4>
   <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 mt-3 gap-4'>
     <div className='flex justify-center'>
-      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]'>
+      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]  transition-all duration-300 ease-in-out transform hover:bg-[#2e7e9e] hover:scale-105 hover:cursor-pointer'>
         <div className='flex justify-center gap-2 pt-2'>
           <div className='w-[13px] h-[13px] rounded-full bg-white mt-[2px]'></div>
           <span className='font-bold text-[12px] sm:text-[13px] leading-[138%] capitalize text-[#fff]'>
@@ -88,7 +88,7 @@ export const Payment = () => {
       </div>
     </div>
     <div className='flex justify-center'>
-      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]'>
+      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]  transition-all duration-300 ease-in-out transform hover:bg-[#2e7e9e] hover:scale-105 hover:cursor-pointer'>
         <div className='flex justify-center gap-2 pt-2'>
           <div className='w-[13px] h-[13px] rounded-full bg-white mt-[2px]'></div>
           <span className='font-bold text-[12px] sm:text-[13px] leading-[138%] capitalize text-[#fff]'>
@@ -98,7 +98,7 @@ export const Payment = () => {
       </div>
     </div>
     <div className='flex justify-center'>
-      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]'>
+      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]  transition-all duration-300 ease-in-out transform hover:bg-[#2e7e9e] hover:scale-105 hover:cursor-pointer'>
         <div className='flex justify-center gap-2 pt-2'>
           <div className='w-[13px] h-[13px] rounded-full bg-white mt-[2px]'></div>
           <span className='font-bold text-[12px] sm:text-[13px] leading-[138%] capitalize text-[#fff]'>
@@ -108,7 +108,7 @@ export const Payment = () => {
       </div>
     </div>
     <div className='flex justify-center'>
-      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]'>
+      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]  transition-all duration-300 ease-in-out transform hover:bg-[#2e7e9e] hover:scale-105 hover:cursor-pointer'>
         <div className='flex justify-center gap-2 pt-2'>
           <div className='w-[13px] h-[13px] rounded-full bg-white mt-[2px]'></div>
           <span className='font-bold text-[12px] sm:text-[13px] leading-[138%] capitalize text-[#fff]'>
@@ -118,7 +118,7 @@ export const Payment = () => {
       </div>
     </div>
     <div className='flex justify-center'>
-      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]'>
+      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]  transition-all duration-300 ease-in-out transform hover:bg-[#2e7e9e] hover:scale-105 hover:cursor-pointer'>
         <div className='flex justify-center gap-2 pt-2'>
           <div className='w-[13px] h-[13px] rounded-full bg-white mt-[2px]'></div>
           <span className='font-bold text-[10px] sm:text-[11px] leading-[138%] capitalize text-[#fff]'>
@@ -128,7 +128,7 @@ export const Payment = () => {
       </div>
     </div>
     <div className='flex justify-center'>
-      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]'>
+      <div className='w-[100px] h-[35px] rounded-3xl bg-[#37B1E2]  transition-all duration-300 ease-in-out transform hover:bg-[#2e7e9e] hover:scale-105 hover:cursor-pointer'>
         <div className='flex justify-center gap-2 pt-2'>
           <div className='w-[13px] h-[13px] rounded-full bg-white mt-[2px]'></div>
           <span className='font-bold text-[12px] sm:text-[13px] leading-[138%] capitalize text-[#fff]'>
@@ -155,7 +155,7 @@ export const Payment = () => {
                 {/* button  */}
 
                   <div className='text-center my-3'>
-                       <button className='w-[240px] h-[59px] rounded-full bg-[#13253f] font-bold text-[15px] leading-[120%] capitalize text-[#fff]'>Confirm Payment</button>
+                       <button className='w-[240px] h-[59px] rounded-full bg-[#13253f] font-bold text-[15px] leading-[120%] capitalize text-[#fff]  transition-all duration-300 ease-in-out transform hover:bg-[#0c182a] hover:scale-105'>Confirm Payment</button>
                   </div>
 
 

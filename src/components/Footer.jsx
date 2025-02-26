@@ -78,10 +78,10 @@ export const Footer = () => {
             </div>
 
            <div className='flex justify-center lg:justify-end space-x-2'>
-               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'><span className='text-black'><FaFacebookF /></span> </div>
-               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'><span className='text-black'><FaTwitter /></span></div>
-               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'> <span className='text-black'><FaInstagram /></span></div>
-               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'> <span className='text-black'><SiPelican /></span></div>
+               <div className=' transition-all duration-300 ease-in-out transform hover:bg-white/40 hover:cursor-pointer hover:scale-105 w-10 h-10 rounded-full bg-white flex justify-center pt-3'><span className='text-black'><FaFacebookF /></span> </div>
+               <div className=' transition-all duration-300 ease-in-out transform hover:bg-white/40 hover:cursor-pointer hover:scale-105 w-10 h-10 rounded-full bg-white flex justify-center pt-3'><span className='text-black'><FaTwitter /></span></div>
+               <div className=' transition-all duration-300 ease-in-out transform hover:bg-white/40 hover:cursor-pointer hover:scale-105 w-10 h-10 rounded-full bg-white flex justify-center pt-3'> <span className='text-black'><FaInstagram /></span></div>
+               <div className=' transition-all duration-300 ease-in-out transform hover:bg-white/40 hover:cursor-pointer hover:scale-105 w-10 h-10 rounded-full bg-white flex justify-center pt-3'> <span className='text-black'><SiPelican /></span></div>
            </div>
        </div>
     </section>

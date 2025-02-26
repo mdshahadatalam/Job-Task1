@@ -38,7 +38,7 @@ export const Guide = ({ totalStars = 5, onRatingChange }) => {
               <img src={man} alt="Guide" className="" />
               <div className="md:ps-4 w-full">
                 <div className="flex items-center py-3">
-                  <button className="w-[130px] h-[26px] bg-[#7BBCB0] font-bold text-[11px] uppercase text-white tracking-wide rounded-2xl">
+                  <button className="w-[130px] h-[26px] bg-[#7BBCB0] font-bold text-[11px] uppercase text-white tracking-wide rounded-2xl  transition-all duration-300 ease-in-out transform hover:bg-[#64ab9e] hover:scale-105">
                     Kuakata
                   </button>
                   <span className="px-4 text-[#c7cdd0]">|</span>
@@ -88,7 +88,7 @@ export const Guide = ({ totalStars = 5, onRatingChange }) => {
             </div>
           </div>
           <div className="flex justify-center md:justify-start lg:justify-center">
-            <button className="w-[261px] h-[96px] bg-[#13253F] rounded-full shadow-md font-normal text-[26px] leading-[85%] text-white">
+            <button className="w-[261px] h-[96px] bg-[#13253F] rounded-full shadow-md font-normal text-[26px] leading-[85%] text-white  transition-all duration-300 ease-in-out transform hover:bg-[#070e17] hover:scale-105">
               Hire Me
             </button>
           </div>
