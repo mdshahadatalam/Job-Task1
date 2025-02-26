@@ -2,9 +2,19 @@ import React, {useState} from "react";
 import {IoIosSearch} from "react-icons/io";
 import {CiMenuFries} from "react-icons/ci";
 import logo from '../assets/image/tour buddy.png'
+import { useNavigate } from "react-router";
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const navigate = useNavigate() 
+
+    const handlePayment =()=>{
+         navigate('/payment')
+    }
+
+  const handleHome = ()=>{
+    navigate('/')
+  }
   return (
     <>
          <div className="max-w-6xl mx-auto mt-5">
@@ -15,9 +25,8 @@ export const Navbar = () => {
 
                {/* nav menus */}
              <ul className="items-center gap-[20px] text-[1rem] text-[#424242] md:flex hidden ">
-                 <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500              cursor-pointer hover:text-[#3B9DF8] capitalize  font-semibold text-[15px] leading-[147%] text-[#495560]              tracking-wide">home</li>
-                 <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500              cursor-pointer hover:text-[#3B9DF8] capitalize  font-semibold text-[15px] leading-[147%] text-[#495560]              tracking-wide">about
-                     us
+                 <li onClick={handleHome} className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500              cursor-pointer hover:text-[#3B9DF8] capitalize  font-semibold text-[15px] leading-[147%] text-[#495560]              tracking-wide">home</li>
+                 <li onClick={handlePayment} className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500              cursor-pointer hover:text-[#3B9DF8] capitalize  font-semibold text-[15px] leading-[147%] text-[#495560]              tracking-wide">Payment
                  </li>
                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500              cursor-pointer hover:text-[#3B9DF8] capitalize  font-semibold text-[15px] leading-[147%] text-[#495560]              tracking-wide">Our Most Rated Guides</li>
                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500              cursor-pointer hover:text-[#3B9DF8] capitalize  font-semibold text-[15px] leading-[147%] text-[#495560]              tracking-wide">Our Packages</li>
