@@ -157,7 +157,7 @@ export const Guide = ({ totalStars = 5, onRatingChange }) => {
 
 
   <section>      
-      <div className='max-w-6xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 py-5'>         
+      <div className='max-w-6xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 py-10'>         
          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">             
             <div className='flex flex-col md:flex-row'>                   
                 <img src={img1} alt="" className='w-16 h-16 object-cover rounded-full' />                                           
