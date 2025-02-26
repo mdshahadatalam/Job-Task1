@@ -10,12 +10,15 @@ import img6 from '../assets/image/image 37.png'
 import img7 from '../assets/image/image 33.png'
 import img8 from '../assets/image/image 34.png'
 import img9 from '../assets/image/image 35.png'
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { SiPelican } from 'react-icons/si'
+// import { SiPearson } from 'react-icons/si'
 export const Footer = () => {
   return (
     <>
            <section className='bg-[#13253F] py-14 px-4 sm:px-6 lg:px-8'>
        <div className='max-w-6xl mx-auto'>
-         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+         <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
               <div className='flex flex-col items-center md:items-start'>
                   <img src={logo} alt="logo" className='w-32 md:w-auto' />
                   
@@ -28,7 +31,23 @@ export const Footer = () => {
                     </div>
               </div>
 
-              <div></div>
+              <div>
+                  <h4 className='font-bold text-[15px] text-white/40'>Payment</h4>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>About Us</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Blog</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Press Room</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Careers</p>
+              </div>
+
+
+              <div>
+              <h4 className='font-bold text-[15px] text-white/40'>Help</h4>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Contact Us</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>FAQs</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Terms and Conditions</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Privacy Policy</p>
+                  <p className='font-normal text-[15px] leading-[200%] text-white/40 hover:cursor-pointer'>Site Map</p>
+              </div>
 
               <div className='mt-12'>
                      <div className='grid grid-cols-10 justify-center'>
@@ -52,12 +71,17 @@ export const Footer = () => {
     </section>
 
     <section className='bg-black py-3 px-4 sm:px-6 lg:px-8'>
-       <div className='max-w-6xl mx-auto'>
+       <div className='max-w-6xl mx-auto flex justify-between'>
+
+           <div>
+              <span className=' pt-3 font-normal text-[15px] text-white/40'>Copyright 2025 Tour Buddy. All Rights Reserved</span>
+            </div>
+
            <div className='flex justify-center lg:justify-end space-x-2'>
-               <div className='w-10 h-10 rounded-full bg-[#4B69B1]'></div>
-               <div className='w-10 h-10 rounded-full bg-[#37B1E2]'></div>
-               <div className='w-10 h-10 rounded-full bg-[#C23772]'></div>
-               <div className='w-10 h-10 rounded-full bg-[#E83F3A]'></div>
+               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'><span className='text-black'><FaFacebookF /></span> </div>
+               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'><span className='text-black'><FaTwitter /></span></div>
+               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'> <span className='text-black'><FaInstagram /></span></div>
+               <div className='w-10 h-10 rounded-full bg-white flex justify-center pt-3'> <span className='text-black'><SiPelican /></span></div>
            </div>
        </div>
     </section>

@@ -201,7 +201,9 @@ export const Guide = ({ totalStars = 5, onRatingChange }) => {
 
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 ">             
-            <div className='flex flex-col md:flex-row'>                   
+            <div className='flex flex-col md:flex-row'> 
+              
+                                
                 <img src={img2} alt="" className='w-16 h-16 object-cover rounded-full' />                                           
                 <div className='mt-4 md:mt-0 md:ml-4'>           
                     <div className=''>             

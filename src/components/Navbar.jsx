@@ -37,7 +37,13 @@ export const Navbar = () => {
             {/* search bar and community links */}
           <div className="flex items-center gap-[10px]">
 
-            <button className="w-[140px] h-[50px] bg-[#FFDA32] rounded-md shadow-md font-extrabold text-[16px] leading-[137%] text-center text-[#1c2b38] tracking-wide">Sign In</button>
+          <button className="w-[140px] h-[50px] bg-[#FFDA32] rounded-md shadow-md font-extrabold text-[16px] leading-[137%] text-center text-[#1c2b38] tracking-wide transition-all duration-300 ease-in-out transform hover:bg-[#ffcc00] hover:scale-105 hidden sm:block">
+  Sign In
+</button>
+
+
+
+
                <CiMenuFries
                  className="text-[1.6rem] text-[#424242] cursor-pointer md:hidden flex"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}/>
