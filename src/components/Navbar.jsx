@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {IoIosSearch} from "react-icons/io";
 import {CiMenuFries} from "react-icons/ci";
 import logo from '../assets/image/tour buddy.png'
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -50,8 +50,8 @@ export const Navbar = () => {
           </div>
 
 {/* mobile sidebar */}
-{/* <aside
-    className={` ${isMenuOpen ? "translate-x-0 opacity-100 z-20" : "translate-x-[200px] opacity-0 z-[-1]"} md:hidden bg-[#3B9DF8] p-4 text-center absolute top-[60px] right-0 w-full sm:w-[300px] rounded-md transition-all duration-300`}>
+<aside
+    className={` ${isMenuOpen ? "translate-y-0 opacity-100 z-20" : "translate-y-[200px] opacity-0 z-[-1]"} md:hidden bg-[#3B9DF8] p-4 text-center absolute top-[60px] right-0 w-full sm:w-[300px] rounded-md transition-all duration-300`}>
 
     <div className="w-full relative mb-5">
         <input
@@ -62,14 +62,12 @@ export const Navbar = () => {
     </div>
 
     <ul className="items-center gap-[20px] text-[1rem] text-white flex flex-col">
-        <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">home</li>
-        <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-poin ter capitalize">about
-            us
-        </li>
-        <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">services</li>
+        <Link to={'/'}><li onClick={() => setIsMenuOpen(!isMenuOpen)} className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">home</li></Link>
+        <Link to={'/payment'}><li onClick={() => setIsMenuOpen(!isMenuOpen)} className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-poin ter capitalize">Payment
+        </li></Link>
     </ul>
 
-</aside> */}
+</aside>
 
         </nav>
          </div>
